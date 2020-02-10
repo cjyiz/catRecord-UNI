@@ -46,17 +46,19 @@
 			</view>
 		</view>
 
-	
-	    <view class="footer">
+
+		<view class="footer">
 			<view v-for="(item,index) in menuList" :key="index">
 				<!-- <image :src="item.img" mode=""></image> -->
 				<view>
-				<i class="iconfont">{{item.icon}}</i>
-				{{item.name}}
+					<i class="iconfont">{{item.icon}}</i>
+					<navigator :url="item.url" hover-class="navigator-hover">
+						<button type="default">{{item.name}}</button>
+					</navigator>
 				</view>
-				
+
 			</view>
-	    </view>
+		</view>
 	</view>
 </template>
 
@@ -109,38 +111,40 @@
 						state: '1'
 					}
 				],
-			menuList:[
-				{
-					name:'首页',
-					icon:'\ue629'
-				},
-				{
-					name:'记录',
-					icon:'\ue66b'
-				},
-				{
-					name:'分享',
-					icon:'\ue60e'
-				},
-				{
-					name:'好货',
-					icon:'\ue602'
-				},
-				{
-					name:'我的',
-					icon:'\ue629'
-				},
-			]
+				menuList: [{
+						name: '首页',
+						icon: '\ue629',
+						url:'/pages/index/index'
+					},
+					{
+						name: '记录',
+						icon: '\ue66b',
+						url:'/pages/record/record'
+					},
+					{
+						name: '分享',
+						icon: '\ue60e'
+					},
+					{
+						name: '好货',
+						icon: '\ue602'
+					},
+					{
+						name: '我的',
+						icon: '\ue629'
+					},
+				]
 			}
 		},
 		components: {
 			BOOK,
 			ORDER,
-		    MEMBERCARD,
+			MEMBERCARD,
 			IconSvg
 		},
 		onLoad(optioons) {
 			this.tabCurrentIndex = 0
+			console.log(option.id)
 		},
 		methods: {
 			changeTab(e) {
@@ -278,16 +282,17 @@
 		}
 	}
 
-    .footer{
+	.footer {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
 		border: 1px solid red;
-		>view{
+
+		>view {
 			flex: 1;
 			height: 40rpx;
-			
+
 		}
 	}
 </style>

@@ -69,15 +69,15 @@
           border-radius: 30rpx;
           /* 下面是tab标签下划线 */
           /* 	&:after {
-						content: '';
-						position: absolute;
-						left: 50%;
-						bottom: 0;
-						transform: translateX(-50%);
-						width: 44px;
-						height: 0;
-						border-bottom: 2px solid red;
-					} */
+					content: '';
+					position: absolute;
+					left: 50%;
+					bottom: 0;
+					transform: translateX(-50%);
+					width: 44px;
+					height: 0;
+					border-bottom: 2px solid red;
+				} */
 }
 .nav .navTop .navTo {
       width: 35%;

@@ -1,6 +1,10 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/share/share",
+    "pages/record/record",
+    "pages/goods/goods",
+    "pages/personal/personal"
   ],
   "subPackages": [],
   "window": {
