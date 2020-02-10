@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "usingComponents": {
+    "b-o-o-k": "/components/book",
+    "o-r-d-e-r": "/components/order",
+    "m-e-m-b-e-r-c-a-r-d": "/components/memberCard",
+    "icon-svg": "/components/icon"
+  }
+}
