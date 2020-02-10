@@ -50,8 +50,11 @@
 	    <view class="footer">
 			<view v-for="(item,index) in menuList" :key="index">
 				<!-- <image :src="item.img" mode=""></image> -->
-				<view>{{item.name}}</view>
-				<icon-svg icon-class='icon-maomi'></icon-svg>
+				<view>
+				<i class="iconfont">{{item.icon}}</i>
+				{{item.name}}
+				</view>
+				
 			</view>
 	    </view>
 	</view>
@@ -109,23 +112,23 @@
 			menuList:[
 				{
 					name:'首页',
-					// img:require('')
+					icon:'\ue629'
 				},
 				{
 					name:'记录',
-					// img:require('')
+					icon:'\ue66b'
 				},
 				{
 					name:'分享',
-					// img:require('')
+					icon:'\ue60e'
 				},
 				{
 					name:'好货',
-					// img:require('')
+					icon:'\ue602'
 				},
 				{
 					name:'我的',
-					// img:require('')
+					icon:'\ue629'
 				},
 			]
 			}

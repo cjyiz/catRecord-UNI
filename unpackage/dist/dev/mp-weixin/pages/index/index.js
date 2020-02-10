@@ -207,6 +207,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
 {
   data: function data() {
     return {
@@ -253,25 +256,25 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
       menuList: [
       {
-        name: '首页'
-        // img:require('')
-      },
+        name: '首页',
+        icon: "\uE629" },
+
       {
-        name: '记录'
-        // img:require('')
-      },
+        name: '记录',
+        icon: "\uE66B" },
+
       {
-        name: '分享'
-        // img:require('')
-      },
+        name: '分享',
+        icon: "\uE60E" },
+
       {
-        name: '好货'
-        // img:require('')
-      },
+        name: '好货',
+        icon: "\uE602" },
+
       {
-        name: '我的'
-        // img:require('')
-      }] };
+        name: '我的',
+        icon: "\uE629" }] };
+
 
 
   },
