@@ -46,19 +46,7 @@
 			</view>
 		</view>
 
-
-		<view class="footer">
-			<view v-for="(item,index) in menuList" :key="index">
-				<!-- <image :src="item.img" mode=""></image> -->
-				<view>
-					<i class="iconfont">{{item.icon}}</i>
-					<navigator :url="item.url" hover-class="navigator-hover">
-						<button type="default">{{item.name}}</button>
-					</navigator>
-				</view>
-
-			</view>
-		</view>
+		<Footer></Footer>
 	</view>
 </template>
 
@@ -67,6 +55,7 @@
 	import ORDER from '@/components/order.vue'
 	import MEMBERCARD from '@/components/memberCard.vue'
 	import IconSvg from '@/components/icon.vue'
+	import Footer from '@/components/footer.vue'
 	export default {
 		data() {
 			return {
@@ -114,24 +103,27 @@
 				menuList: [{
 						name: '首页',
 						icon: '\ue629',
-						url:'/pages/index/index'
+						url: '/pages/index/index'
 					},
 					{
 						name: '记录',
 						icon: '\ue66b',
-						url:'/pages/record/record'
+						url: '/pages/record/record'
 					},
 					{
 						name: '分享',
-						icon: '\ue60e'
+						icon: '\ue60e',
+						url: '/pages/share/share'
 					},
 					{
 						name: '好货',
-						icon: '\ue602'
+						icon: '\ue602',
+						url: '/pages/goods/goods'
 					},
 					{
 						name: '我的',
-						icon: '\ue629'
+						icon: '\ue629',
+						url: '/pages/personal/personal'
 					},
 				]
 			}
@@ -140,7 +132,8 @@
 			BOOK,
 			ORDER,
 			MEMBERCARD,
-			IconSvg
+			IconSvg,
+			Footer
 		},
 		onLoad(optioons) {
 			this.tabCurrentIndex = 0
@@ -281,18 +274,5 @@
 
 		}
 	}
-
-	.footer {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		border: 1px solid red;
-
-		>view {
-			flex: 1;
-			height: 40rpx;
-
-		}
-	}
+	
 </style>

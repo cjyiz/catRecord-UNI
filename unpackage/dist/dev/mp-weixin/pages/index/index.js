@@ -142,18 +142,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var BOOK = function BOOK() {return __webpack_require__.e(/*! import() | components/book */ "components/book").then(__webpack_require__.bind(null, /*! @/components/book.vue */ 47));};var ORDER = function ORDER() {return __webpack_require__.e(/*! import() | components/order */ "components/order").then(__webpack_require__.bind(null, /*! @/components/order.vue */ 52));};var MEMBERCARD = function MEMBERCARD() {return __webpack_require__.e(/*! import() | components/memberCard */ "components/memberCard").then(__webpack_require__.bind(null, /*! @/components/memberCard.vue */ 57));};var IconSvg = function IconSvg() {return __webpack_require__.e(/*! import() | components/icon */ "components/icon").then(__webpack_require__.bind(null, /*! @/components/icon.vue */ 62));};var _default =
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var BOOK = function BOOK() {return __webpack_require__.e(/*! import() | components/book */ "components/book").then(__webpack_require__.bind(null, /*! @/components/book.vue */ 47));};var ORDER = function ORDER() {return __webpack_require__.e(/*! import() | components/order */ "components/order").then(__webpack_require__.bind(null, /*! @/components/order.vue */ 52));};var MEMBERCARD = function MEMBERCARD() {return __webpack_require__.e(/*! import() | components/memberCard */ "components/memberCard").then(__webpack_require__.bind(null, /*! @/components/memberCard.vue */ 57));};var IconSvg = function IconSvg() {return __webpack_require__.e(/*! import() | components/icon */ "components/icon").then(__webpack_require__.bind(null, /*! @/components/icon.vue */ 62));};var Footer = function Footer() {return __webpack_require__.e(/*! import() | components/footer */ "components/footer").then(__webpack_require__.bind(null, /*! @/components/footer.vue */ 69));};var _default =
 
 
 
@@ -267,15 +256,18 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
       {
         name: '分享',
-        icon: "\uE60E" },
+        icon: "\uE60E",
+        url: '/pages/share/share' },
 
       {
         name: '好货',
-        icon: "\uE602" },
+        icon: "\uE602",
+        url: '/pages/goods/goods' },
 
       {
         name: '我的',
-        icon: "\uE629" }] };
+        icon: "\uE629",
+        url: '/pages/personal/personal' }] };
 
 
 
@@ -284,7 +276,8 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     BOOK: BOOK,
     ORDER: ORDER,
     MEMBERCARD: MEMBERCARD,
-    IconSvg: IconSvg },
+    IconSvg: IconSvg,
+    Footer: Footer },
 
   onLoad: function onLoad(optioons) {
     this.tabCurrentIndex = 0;

@@ -1,5 +1,5 @@
 {
-    "name" : "catRecord",
+    "name" : "catRecord ",
     "appid" : "",
     "description" : "",
     "versionName" : "1.0.0",
@@ -57,7 +57,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "",
+        "appid" : "wxf9151ab9e8b37db6",
         "setting" : {
             "urlCheck" : false
         },

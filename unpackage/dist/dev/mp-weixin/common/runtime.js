@@ -104,11 +104,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/icon":1};
+/******/ 		var cssChunks = {"components/footer":1,"components/icon":1,"components/uni-calendar/uni-calendar":1,"components/uni-calendar/uni-calendar-item":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/book":"components/book","components/icon":"components/icon","components/memberCard":"components/memberCard","components/order":"components/order"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/book":"components/book","components/footer":"components/footer","components/icon":"components/icon","components/memberCard":"components/memberCard","components/order":"components/order","components/uni-calendar/uni-calendar":"components/uni-calendar/uni-calendar","components/uni-calendar/uni-calendar-item":"components/uni-calendar/uni-calendar-item"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
