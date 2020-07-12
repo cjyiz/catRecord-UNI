@@ -1,0 +1,1 @@
+<view><view class="per-header"><view class="per-name"><image src="../../static/logo.png" mode></image><label class="_span">昵称</label><label class="_span">s</label></view><view class="per-card"><view>优惠券</view><view>猫咪卡</view><view>积分</view></view></view><view><view>我的预约</view><view>我的订单</view></view><footer vue-id="ffa91980-1" bind:__l="__l"></footer></view>

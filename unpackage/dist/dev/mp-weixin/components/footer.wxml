@@ -1,0 +1,1 @@
+<view class="footer"><block wx:for="{{menuList}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view><navigator url="{{item.url}}" hover-class="navigator-hover"><view><view class="iconfont _i">{{item.icon}}</view><view>{{''+item.name+''}}</view></view></navigator></view></block></view>

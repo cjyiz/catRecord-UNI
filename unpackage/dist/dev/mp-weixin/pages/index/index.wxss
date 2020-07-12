@@ -28,47 +28,48 @@
   background-color: #C5F3FF;
 }
 .nav .navTop {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-            flex-direction: row;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
 }
 .nav .navTop .navbar {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: flex;
-      width: 65%;
-      height: 40px;
-      padding: 0 5px;
-      position: relative;
-      z-index: 10;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 65%;
+  height: 40px;
+  padding: 0 5px;
+  position: relative;
+  z-index: 10;
 }
 .nav .navTop .navbar .nav-item {
-        -webkit-box-flex: 1;
-        -webkit-flex: 1;
-                flex: 1;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-                justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-                align-items: center;
-        height: 100%;
-        font-size: 15px;
-        color: #fff;
-        position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  height: 100%;
+  font-size: 15px;
+  color: #fff;
+  position: relative;
 }
 .nav .navTop .navbar .nav-item.current {
-          background-color: #797979;
+  background-color: #797979;
+  -webkit-border-radius: 30rpx;
           border-radius: 30rpx;
-          /* 下面是tab标签下划线 */
-          /* 	&:after {
+  /* 下面是tab标签下划线 */
+  /* 	&:after {
 					content: '';
 					position: absolute;
 					left: 50%;
@@ -80,63 +81,64 @@
 				} */
 }
 .nav .navTop .navTo {
-      width: 35%;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-              align-items: center;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-              justify-content: center;
+  width: 35%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
 }
 .nav .navTop .navTo > view {
-        height: 80rpx;
-        width: 70rpx;
-        background-color: red;
+  height: 80rpx;
+  width: 70rpx;
+  background-color: red;
 }
 .nav .list {
-    width: 100%;
+  width: 100%;
 }
 .nav .list .catAvatar::after {
-      content: "";
-      display: block;
-      height: 1rpx;
-      width: 90%;
-      background-color: grey;
-      margin: 10rpx 5%;
+  content: "";
+  display: block;
+  height: 1rpx;
+  width: 90%;
+  background-color: grey;
+  margin: 10rpx 5%;
 }
 .nav .list .catCondition {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-              justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-              align-items: center;
-      width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
 }
 .nav .list .catCondition > view {
-        height: 220rpx;
-        width: 220rpx;
-        font-size: 20rpx;
-        text-align: center;
-        border: 5rpx solid #FFCC33;
-        border-radius: 220rpx;
+  height: 220rpx;
+  width: 220rpx;
+  font-size: 20rpx;
+  text-align: center;
+  border: 5rpx solid #FFCC33;
+  -webkit-border-radius: 220rpx;
+          border-radius: 220rpx;
 }
 .nav .list .catCondition > view:nth-child(2) {
-        margin: 0 20rpx;
+  margin: 0 20rpx;
 }
 .options .optionName {
   display: -webkit-box;
@@ -154,12 +156,12 @@
           align-items: center;
 }
 .options .optionName > view {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-            flex: 1;
-    text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  text-align: center;
 }
 .options .optionName .optionCurrent {
-    border-bottom: 2px solid red;
+  border-bottom: 2px solid red;
 }
 
